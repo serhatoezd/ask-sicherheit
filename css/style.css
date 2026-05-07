@@ -1,0 +1,143 @@
+h3 {
+  color: azure;
+}
+
+hr {
+  width: 60px;
+  border: 2px solid #e8d5c8;
+}
+body {
+  background-color: #fdf9f7;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.gradient-background {
+  background: linear-gradient(300deg, #caaa98, #9a8678);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.start-img {
+  height: 50vh;
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(0.7);
+}
+.position-absolute h1,
+.position-absolute p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.btn-primary {
+  background-color: #caaa98;
+  border-color: #9a8678;
+}
+
+.qualifikation {
+  background-color: #f5f5f5;
+}
+
+.img-leistung {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.nav-link {
+  color: #eaefef;
+  font-size: 1.5rem;
+}
+
+.card-img-top {
+  height: 225px;
+  object-fit: cover;
+}
+
+.login-container {
+  min-height: 100vh;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Carousel Bild */
+#mainCarousel {
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+}
+
+.carousel-text-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  background-color: rgba(15, 20, 35, 0.88);
+  color: white;
+  padding: 20px 24px;
+  z-index: 10;
+}
+
+.carousel-text-box h5 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.carousel-text-box p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.carousel-text-box a {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0);
+}
