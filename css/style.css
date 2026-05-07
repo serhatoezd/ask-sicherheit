@@ -173,3 +173,16 @@ img {
     font-size: 0.75rem;
   }
 }
+/* Testimonial Carousel */
+#testimonialCarousel .carousel-item p.fs-5 {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.8;
+}
+
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+  width: 40px;
+  background: none;
+}
