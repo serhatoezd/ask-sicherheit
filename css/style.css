@@ -83,6 +83,7 @@ img {
 }
 
 /* Carousel Bild */
+/* Carousel */
 #mainCarousel {
   width: 70%;
   margin: 20px auto;
@@ -126,17 +127,6 @@ img {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .carousel-text-box {
-    width: 40%;
-    padding: 6px 8px;
-  }
-
-  .carousel-text-box p {
-    display: none;
-  }
-}
-
 .carousel-control-prev,
 .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.3);
@@ -150,4 +140,36 @@ img {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(0);
+}
+
+/* Handy */
+@media (max-width: 768px) {
+  #mainCarousel {
+    width: 100%;
+    margin: 0;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .carousel-text-box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px 12px;
+    background-color: rgba(15, 20, 35, 0.7);
+  }
+
+  .carousel-text-box h5 {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+
+  .carousel-text-box a {
+    font-size: 0.75rem;
+  }
 }
