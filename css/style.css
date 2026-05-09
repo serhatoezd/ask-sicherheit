@@ -1,3 +1,9 @@
+.gradient-background {
+  background: linear-gradient(300deg, #caaa98, #9a8678);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
 h3 {
   color: azure;
 }
@@ -12,11 +18,6 @@ body {
 img {
   height: auto;
   max-width: 100%;
-}
-.gradient-background {
-  background: linear-gradient(300deg, #caaa98, #9a8678);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -83,7 +84,6 @@ img {
   max-width: 400px;
 }
 
-/* Carousel Bild */
 /* Carousel */
 #mainCarousel {
   width: 70%;
@@ -108,7 +108,6 @@ img {
   padding: clamp(8px, 2%, 24px);
   z-index: 10;
 }
-
 .carousel-text-box h5 {
   font-size: clamp(0.7rem, 1.5vw, 1.1rem);
   margin-bottom: 10px;
@@ -130,12 +129,12 @@ img {
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 1);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   top: 50%;
-  transform: translateY(-50%);
+  z-index: 30;
 }
 
 .carousel-control-prev-icon,
@@ -149,6 +148,7 @@ img {
     width: 100%;
     margin: 0;
   }
+
   .carousel-item img {
     width: 100%;
     height: 250px;
@@ -157,12 +157,11 @@ img {
   }
 
   .carousel-text-box {
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: 0;
-    left: 0;
     padding: 10px 12px;
-    background-color: rgba(15, 20, 35, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
   }
 
   .carousel-text-box h5 {
@@ -174,16 +173,11 @@ img {
     font-size: 0.75rem;
   }
 }
+
 /* Testimonial Carousel */
-#testimonialCarousel .carousel-item p.fs-5 {
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 20px;
-  line-height: 1.8;
-}
 
 #testimonialCarousel .carousel-control-prev,
 #testimonialCarousel .carousel-control-next {
-  width: 40px;
-  background: none;
+  width: 30px;
+  filter: invert(0);
 }
