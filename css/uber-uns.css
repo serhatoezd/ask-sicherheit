@@ -21,7 +21,9 @@ body {
 
 .hero-img {
   width: 100%;
-  height: 400px;
+  height: auto; /* ← Höhe automatisch, Proportionen bleiben */
+  object-fit: contain; /* ← nicht zuschneiden */
+  border-radius: 8px;
 }
 
 .hero-label {
