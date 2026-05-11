@@ -4,6 +4,18 @@
   animation: gradient-animation 18s ease infinite;
 }
 
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 h3 {
   color: azure;
 }
@@ -18,18 +30,6 @@ body {
 img {
   height: auto;
   max-width: 100%;
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .logo {
@@ -67,7 +67,7 @@ img {
 
 .nav-link {
   color: #eaefef;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .card-img-top {
@@ -183,5 +183,5 @@ img {
 }
 
 .footer-legal a {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }

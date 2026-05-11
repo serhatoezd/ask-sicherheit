@@ -1,6 +1,6 @@
 :root {
-  --ask-dark: #4a3020; /* Sehr dunkles Braun – Header, Footer, Zahlen */
-  --ask-dark-mid: #4a3728; /* Etwas heller – Zwischenbereiche */
+  --ask-dark: #6b4c35;
+  --ask-dark-mid: #3d2b1f; /* Etwas heller – Zwischenbereiche */
   --ask-accent: #c8963c; /* Gold – Buttons, Akzente, Linien */
   --ask-light: #fdf9f7; /* Cremeweiß – Hintergründe */
   --ask-mid: #caaa98; /* Helles Braun – Hero rechte Seite */
@@ -12,7 +12,7 @@ body {
 }
 
 .hero {
-  background-color: var(--ask-dark);
+  background-color: var(--ask-dark-mid);
   color: white;
   padding: 80px 0 60px;
   position: relative;
@@ -40,13 +40,13 @@ body {
   margin-bottom: 20px;
 }
 .hero p {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: #aab0c0;
   max-width: 520px;
   line-height: 1.8;
 }
 .section-label {
-  font-size: 0.75rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--ask-accent);
@@ -210,22 +210,24 @@ body {
   margin: 6px 4px;
 }
 .section-standort {
-  padding: 80px 0;
-  background-color: #f0f0f0; /* hellgrau */
+  padding: 60px 0;
+  background-color: #f0f0f0;
 }
 .standort-card {
   border-radius: 8px;
-  padding: 32px;
+  padding: 48px;
   height: 100%;
 }
+
 .standort-card h5 {
   font-weight: 700;
   margin-bottom: 16px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
+
 .standort-card p,
 .standort-card li {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #555;
   line-height: 1.8;
 }

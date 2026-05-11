@@ -1,15 +1,15 @@
 /* style.css – ganz oben einfügen */
 :root {
-  --ask-dark: #4a3020;
-  --ask-accent: #c8963c;
-  --ask-light: #fdf9f7;
-  --ask-mid: #caaa98;
-  --ask-dark-mid: #4a3728;
-  --ask-text-light: #e8d5c8;
+  --ask-dark: #6b4c35;
+  --ask-dark-mid: #3d2b1f; /* Etwas heller – Zwischenbereiche */
+  --ask-accent: #c8963c; /* Gold – Buttons, Akzente, Linien */
+  --ask-light: #fdf9f7; /* Cremeweiß – Hintergründe */
+  --ask-mid: #caaa98; /* Helles Braun – Hero rechte Seite */
+  --ask-text-light: #e8d5c8; /* Helles Beige – Text auf dunklem Hintergrund */
 }
 
 .kontakt-hero {
-  background-color: var(--ask-dark);
+  background-color: var(--ask-dark-mid);
   color: white;
   padding: 60px 0;
 }

@@ -90,3 +90,8 @@
 .section-block a {
   color: #c0392b;
 }
+
+.section-standort {
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+}
