@@ -181,3 +181,7 @@ img {
   width: 30px;
   filter: invert(0);
 }
+
+.footer-legal a {
+  font-size: 0.8rem;
+}

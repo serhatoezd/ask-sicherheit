@@ -1,0 +1,92 @@
+/* ── Hero ── */
+.hero-datenschutz {
+  background-color: #f8f9fa;
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.hero-datenschutz h1 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #1a2340;
+}
+
+.hero-datenschutz p {
+  color: #555;
+  max-width: 620px;
+  line-height: 1.8;
+}
+
+/* ── Inhalt ── */
+.datenschutz-content {
+  padding: 3rem 0 4rem;
+  background-color: #f8f9fa;
+}
+
+.datenschutz-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 2.5rem;
+}
+
+.section-block {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.section-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.section-block h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a2340;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-block p,
+.section-block li {
+  color: #444;
+  line-height: 1.8;
+  font-size: 0.97rem;
+}
+
+.section-block ul {
+  padding-left: 1.4rem;
+}
+
+.section-block ul li {
+  margin-bottom: 0.3rem;
+}
+
+.info-box {
+  background-color: #f1f4fb;
+  border-left: 4px solid #c0392b;
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.info-box a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+.section-block a {
+  color: #c0392b;
+}
