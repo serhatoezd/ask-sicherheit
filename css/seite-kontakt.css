@@ -31,8 +31,18 @@
   background-color: var(--ask-light);
 }
 
+/* Kacheln für Kontakt-Info-Blöcke */
 .kontakt-info-box {
-  margin-bottom: 28px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-left: 4px solid var(--ask-accent);
+  transition: box-shadow 0.2s;
+}
+.kontakt-info-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .kontakt-info-box h5 {
