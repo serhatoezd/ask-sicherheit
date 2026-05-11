@@ -95,3 +95,11 @@
   padding: 4rem 0;
   margin-bottom: 2rem;
 }
+
+.standort-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 48px;
+  height: 100%;
+  border-top: 3px solid var(--ask-accent);
+}

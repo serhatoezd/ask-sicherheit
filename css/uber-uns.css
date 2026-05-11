@@ -12,7 +12,7 @@ body {
 }
 
 .hero {
-  background-color: var(--ask-dark-mid);
+  background-color: var(--ask-dark);
   color: white;
   padding: 80px 0 60px;
   position: relative;
@@ -214,9 +214,11 @@ body {
   background-color: #f0f0f0;
 }
 .standort-card {
+  background: #fff;
   border-radius: 8px;
   padding: 48px;
   height: 100%;
+  border-top: 3px solid var(--ask-accent);
 }
 
 .standort-card h5 {
@@ -232,7 +234,7 @@ body {
   line-height: 1.8;
 }
 .section-cta {
-  background-color: var(--ask-dark-mid); /* #1a2a4a – dunkles Blau */
+  background-color: var(--ask-dark); /* #1a2a4a – dunkles Blau */
   color: #ffffff;
   padding: 60px 0;
   text-align: center;
