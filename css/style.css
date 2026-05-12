@@ -777,8 +777,8 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: #caaa98;
-  color: #3d2b1f;
+  background-color: var(--ask-mid);
+  color: var(--ask-dark-mid);
   text-decoration: none;
   padding: 12px 18px;
   border-radius: 6px;
@@ -793,8 +793,17 @@ img {
 
 .whatsapp-float:hover {
   background-color: #b89080;
-  color: #3d2b1f;
+  color: var(--ask-text-light);
   transform: translateY(-2px);
+}
+
+.whatsapp-float svg {
+  fill: #128c7e;
+  flex-shrink: 0;
+}
+
+.whatsapp-float:hover svg {
+  fill: #128c7e;
 }
 
 /* Auf Mobilgeräten nur Icon anzeigen */
