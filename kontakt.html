@@ -4,29 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt | A.S.K Akademie</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- Eigenes Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/seite-kontakt.css" />
   </head>
 
   <body class="d-flex flex-column min-vh-100">
-    <!-- Header -->
+    <!-- ============================================================
+         HEADER – Navigation
+         ============================================================ -->
     <section class="gradient-background">
       <div class="container">
         <header
           class="navbar d-flex align-items-center justify-content-between py-3 px-4 mb-4 border-bottom"
         >
+          <!-- Logo -->
           <a
             href="./index.html"
             class="d-inline-flex link-body-emphasis text-decoration-none"
           >
             <img class="logo" src="./assets/images/logo.png" alt="Logo" />
           </a>
+
+          <!-- Hamburger-Menü (mobil) -->
           <button
             class="navbar-toggler d-md-none"
             type="button"
@@ -35,6 +43,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Desktop-Navigation -->
           <ul class="nav d-none d-md-flex" id="navDesktop">
             <li class="nav-item">
               <a href="index.html" class="nav-link px-2">Startseite</a>
@@ -46,6 +56,8 @@
               <a href="./kontakt.html" class="nav-link px-2">Kontakt</a>
             </li>
           </ul>
+
+          <!-- Mobile Navigation (aufklappbar) -->
           <div class="collapse w-100 d-md-none" id="navMenu">
             <ul class="nav flex-column mt-2 text-end">
               <li class="nav-item">
@@ -63,6 +75,9 @@
       </div>
     </section>
 
+    <!-- ============================================================
+         MAIN – Hauptinhalt
+         ============================================================ -->
     <main class="flex-grow-1">
       <!-- Hero -->
       <section class="kontakt-hero">
@@ -76,11 +91,11 @@
         </div>
       </section>
 
-      <!-- Kontakt Info + Formular -->
+      <!-- Kontaktinfo & Formular -->
       <section class="section-kontakt">
         <div class="container">
           <div class="row g-5">
-            <!-- Linke Seite – Infos -->
+            <!-- Linke Seite – Kontaktinformationen -->
             <div class="col-lg-5">
               <!-- Adresse -->
               <div class="kontakt-info-box">
@@ -110,7 +125,7 @@
                 <p>Montag – Freitag<br />08:00 – 15:00 Uhr</p>
               </div>
 
-              <!-- WhatsApp -->
+              <!-- WhatsApp-Button -->
               <a
                 href="https://wa.me/491517506802"
                 target="_blank"
@@ -131,12 +146,14 @@
               </a>
             </div>
 
-            <!-- Rechte Seite – Formular -->
+            <!-- Rechte Seite – Kontaktformular -->
             <div class="col-lg-7">
               <div class="kontakt-formular">
                 <h4>Nachricht senden</h4>
+
                 <form action="https://formspree.io/f/xrejozzz" method="POST">
                   <div class="row g-3">
+                    <!-- Name -->
                     <div class="col-md-6">
                       <label class="form-label">Vorname</label>
                       <input
@@ -157,6 +174,8 @@
                         required
                       />
                     </div>
+
+                    <!-- E-Mail -->
                     <div class="col-12">
                       <label class="form-label">E-Mail</label>
                       <input
@@ -167,6 +186,8 @@
                         required
                       />
                     </div>
+
+                    <!-- Telefon -->
                     <div class="col-12">
                       <label class="form-label">Telefon (optional)</label>
                       <input
@@ -176,6 +197,8 @@
                         placeholder="+49 123 456789"
                       />
                     </div>
+
+                    <!-- Betreff -->
                     <div class="col-12">
                       <label class="form-label">Betreff</label>
                       <select name="betreff" class="form-select">
@@ -186,6 +209,8 @@
                         <option>Bewerbung</option>
                       </select>
                     </div>
+
+                    <!-- Nachricht -->
                     <div class="col-12">
                       <label class="form-label">Nachricht</label>
                       <textarea
@@ -196,6 +221,8 @@
                         required
                       ></textarea>
                     </div>
+
+                    <!-- Datenschutzhinweis -->
                     <div class="col-12">
                       <p style="font-size: 0.85rem; color: #666">
                         Mit dem Absenden stimmen Sie der Verarbeitung Ihrer
@@ -204,6 +231,8 @@
                         zu.
                       </p>
                     </div>
+
+                    <!-- Absenden -->
                     <div class="col-12">
                       <button type="submit" class="btn-kontakt">
                         Nachricht absenden
@@ -218,9 +247,12 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
     <footer class="gradient-background px-4 py-5">
       <div class="container">
+        <!-- Footer-Navigation -->
         <ul class="nav justify-content-center pb-3 mb-3">
           <li class="nav-item">
             <a href="index.html" class="nav-link px-2">Startseite</a>
@@ -232,10 +264,14 @@
             <a href="kontakt.html" class="nav-link px-2">Kontakt</a>
           </li>
         </ul>
+
+        <!-- Adresse & Kontakt -->
         <p class="text-center text-white">
           © 2026 A.S.K Akademie für Sicherheit & Kommunikation GmbH <br />|
           Dammstraße 25, 47119 Duisburg | +49 (0) 203 73 95 77 71 <br />
         </p>
+
+        <!-- Rechtliches -->
         <ul class="nav justify-content-center mt-2 footer-legal">
           <li class="nav-item">
             <a href="./datenschutz.html" class="nav-link px-2">Datenschutz</a>
@@ -247,6 +283,7 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

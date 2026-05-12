@@ -4,28 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sicherheitskraft Schulung | Startseite</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- Eigenes Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="d-flex flex-column min-vh-100">
-    <!-- Header -->
+    <!-- ============================================================
+         HEADER – Navigation
+         ============================================================ -->
     <section class="gradient-background">
       <div class="container">
         <header
           class="navbar d-flex align-items-center justify-content-between py-3 px-4 mb-4 border-bottom"
         >
+          <!-- Logo -->
           <a
             href="./index.html"
             class="d-inline-flex link-body-emphasis text-decoration-none"
           >
             <img class="logo" src="./assets/images/logo.png" alt="Logo" />
           </a>
+
+          <!-- Hamburger-Menü (mobil) -->
           <button
             class="navbar-toggler d-md-none"
             type="button"
@@ -34,6 +43,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Desktop-Navigation -->
           <ul class="nav d-none d-md-flex" id="navDesktop">
             <li class="nav-item">
               <a href="index.html" class="nav-link px-2">Startseite</a>
@@ -45,6 +56,8 @@
               <a href="./kontakt.html" class="nav-link px-2">Kontakt</a>
             </li>
           </ul>
+
+          <!-- Mobile Navigation (aufklappbar) -->
           <div class="collapse w-100 d-md-none" id="navMenu">
             <ul class="nav flex-column mt-2 text-end">
               <li class="nav-item">
@@ -62,20 +75,22 @@
       </div>
     </section>
 
-    <!-- Main Content -->
+    <!-- ============================================================
+         MAIN – Hauptinhalt
+         ============================================================ -->
     <main class="flex-grow-1">
-      <!-- Hero Image -->
+      <!-- Hero-Bild mit Titeltext -->
       <section class="my-5 py-5 first-section">
         <div class="container-fluid">
           <div class="position-relative text-center rounded-3 overflow-hidden">
-            <!-- Bild -->
+            <!-- Hintergrundbild -->
             <img
               class="start-img w-100"
               src="./assets/images/tiomothy-swope-zwe--GYIZtc-unsplash.jpg"
               alt=""
             />
 
-            <!-- Text ÜBER dem Bild -->
+            <!-- Überlagerter Text -->
             <div
               class="position-absolute top-50 start-50 translate-middle text-white"
             >
@@ -86,6 +101,7 @@
         </div>
       </section>
 
+      <!-- Haupt-Carousel (Angebote) -->
       <section>
         <div
           id="mainCarousel"
@@ -94,7 +110,7 @@
           data-bs-interval="9000"
         >
           <div class="carousel-inner">
-            <!-- Slide 1 -->
+            <!-- Slide 1 – Top-Job -->
             <div class="carousel-item active">
               <img
                 src="./assets/images/Gemini_Generated_Image_162vta162vta162v.png"
@@ -109,7 +125,7 @@
               </div>
             </div>
 
-            <!-- Slide 2 -->
+            <!-- Slide 2 – Kurse -->
             <div class="carousel-item">
               <img
                 src="./assets/images/Gemini_Generated_Image_ewdk2lewdk2lewdk.png"
@@ -118,14 +134,14 @@
               />
               <div class="carousel-text-box">
                 <h5>Erreiche das nächste Level!</h5>
-                <a href="./leistungen.html"
+                <a href="./kontakt.html"
                   >Hier findest du unsere aktuellen Kurse &amp;
                   Weiterbildungen</a
                 >
               </div>
             </div>
 
-            <!-- Slide 3 -->
+            <!-- Slide 3 – Coaching -->
             <div class="carousel-item">
               <img
                 src="./assets/images/pexels-silverkblack-36733333.jpg"
@@ -134,14 +150,14 @@
               />
               <div class="carousel-text-box">
                 <h5>Verbessere deine Karrierechancen!</h5>
-                <a href="./leistungen.html"
+                <a href="./kontakt.html"
                   >Hier findest du unsere aktuellen Coaching-Angebote</a
                 >
               </div>
             </div>
           </div>
 
-          <!-- Bootstrap Pfeile -->
+          <!-- Carousel-Steuerung -->
           <button
             class="carousel-control-prev"
             type="button"
@@ -163,10 +179,11 @@
         </div>
       </section>
 
-      <!-- Hero Section -->
+      <!-- Intro-Sektion – §34a Sachkunde -->
       <section>
         <div class="container col-xxl-8 px-4 py-5">
           <div class="row flex-lg-row align-items-center g-5 py-5">
+            <!-- Bild -->
             <div class="col-10 col-sm-8 col-lg-6">
               <img
                 src="./assets/images/ChatGPT Image 9. Mai 2026, 15_43_00.png"
@@ -176,6 +193,8 @@
                 height="600"
               />
             </div>
+
+            <!-- Text & CTA -->
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
                 Sicherheitsfachkraft nach Sachkunde §34a GewO IHK
@@ -188,7 +207,7 @@
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <a
-                  href="./leistungen.html"
+                  href="./kontakt.html"
                   class="btn btn-primary btn-lg px-4 me-md-2"
                   >Kontakt</a
                 >
@@ -198,7 +217,7 @@
         </div>
       </section>
 
-      <!-- Hero Bilder -->
+      <!-- Bilder-Sektion (klickbar, öffnen als Modal) -->
       <section class="my-5">
         <div class="container">
           <!-- Bild 1 -->
@@ -223,7 +242,7 @@
         </div>
       </section>
 
-      <!-- Modal Bild 1 -->
+      <!-- Modal – Bild 1 (Vollbild) -->
       <div class="modal fade" id="modal1" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content bg-black">
@@ -243,7 +262,7 @@
         </div>
       </div>
 
-      <!-- Modal Bild 2 -->
+      <!-- Modal – Bild 2 (Vollbild) -->
       <div class="modal fade" id="modal2" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content bg-black">
@@ -263,11 +282,12 @@
         </div>
       </div>
 
-      <!-- Services Section -->
+      <!-- Leistungen (Kurs-Karten) -->
       <section id="leistungen">
         <div class="container my-5 py-5">
           <h2 class="text-center mb-5 pb-2 border-bottom">Das bieten wir an</h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!-- Karte 1 – §34a Grundlehrgang -->
             <div class="col">
               <div class="card shadow-sm">
                 <img
@@ -285,6 +305,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Karte 2 – Erste Hilfe & Brandschutz -->
             <div class="col">
               <div class="card shadow-sm">
                 <img
@@ -303,6 +325,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Karte 3 – Förderung -->
             <div class="col">
               <div class="card shadow-sm">
                 <img
@@ -323,7 +347,8 @@
           </div>
         </div>
       </section>
-      <!-- Bewertungen -->
+
+      <!-- Bewertungen (Testimonial-Carousel) -->
       <section class="py-5">
         <div class="container">
           <div
@@ -364,7 +389,7 @@
               </div>
             </div>
 
-            <!-- Pfeile -->
+            <!-- Carousel-Steuerung -->
             <button
               class="carousel-control-prev"
               type="button"
@@ -393,11 +418,12 @@
         </div>
       </section>
 
-      <!-- Qualifications Section -->
+      <!-- Vorteile / Warum bei uns? -->
       <section class="qualifikation" id="qualifikationen">
         <div class="container px-4 py-5 text-center">
           <h2 class="pb-2">Warum bei uns?</h2>
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <!-- Vorteil 1 -->
             <div class="col d-flex align-items-start">
               <div>
                 <h3 class="fs-2 text-body-emphasis">Erfahrene Dozenten</h3>
@@ -407,6 +433,8 @@
                 </p>
               </div>
             </div>
+
+            <!-- Vorteil 2 -->
             <div class="col d-flex align-items-start">
               <div>
                 <h3 class="fs-2 text-body-emphasis">
@@ -418,6 +446,8 @@
                 </p>
               </div>
             </div>
+
+            <!-- Vorteil 3 -->
             <div class="col d-flex align-items-start">
               <div>
                 <h3 class="fs-2 text-body-emphasis">Karrierechancen</h3>
@@ -433,9 +463,12 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
     <footer class="gradient-background px-4 py-5">
       <div class="container">
+        <!-- Footer-Navigation -->
         <ul class="nav justify-content-center pb-3 mb-3">
           <li class="nav-item">
             <a href="index.html" class="nav-link px-2">Startseite</a>
@@ -447,10 +480,14 @@
             <a href="kontakt.html" class="nav-link px-2">Kontakt</a>
           </li>
         </ul>
+
+        <!-- Adresse & Kontakt -->
         <p class="text-center text-white">
           © 2026 A.S.K Akademie für Sicherheit & Kommunikation GmbH <br />|
           Dammstraße 25, 47119 Duisburg | +49 (0) 203 73 95 77 71 <br />
         </p>
+
+        <!-- Rechtliches -->
         <ul class="nav justify-content-center mt-2 footer-legal">
           <li class="nav-item">
             <a href="./datenschutz.html" class="nav-link px-2">Datenschutz</a>
@@ -462,6 +499,7 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

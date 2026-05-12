@@ -1,3 +1,47 @@
+/* ============================================================
+   STYLE.CSS – ASK Sicherheitsdienst
+   Hauptstylesheet für alle Seiten
+   ============================================================ */
+
+/* ── CSS-Variablen ── */
+:root {
+  --ask-dark: #6b4c35;
+  --ask-dark-mid: #3d2b1f; /* Etwas heller – Zwischenbereiche */
+  --ask-accent: #c8963c; /* Gold – Buttons, Akzente, Linien */
+  --ask-light: #fdf9f7; /* Cremeweiß – Hintergründe */
+  --ask-mid: #caaa98; /* Helles Braun – Hero rechte Seite */
+  --ask-text-light: #e8d5c8; /* Helles Beige – Text auf dunklem Hintergrund */
+}
+
+/* ============================================================
+   GLOBAL – Basis-Styles für alle Seiten
+   ============================================================ */
+
+body {
+  background-color: #fdf9f7;
+}
+
+h3 {
+  color: azure;
+}
+
+hr {
+  width: 60px;
+  border: 2px solid #e8d5c8;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+/* ── Gradient-Hintergrund (z.B. Footer/Banner) ── */
 .gradient-background {
   background: linear-gradient(300deg, #caaa98, #9a8678);
   background-size: 180% 180%;
@@ -16,27 +60,53 @@
   }
 }
 
-h3 {
-  color: azure;
+/* ── Navigation ── */
+.nav-link {
+  color: #eaefef;
+  font-size: 2rem;
 }
 
-hr {
-  width: 60px;
-  border: 2px solid #e8d5c8;
-}
-body {
-  background-color: #fdf9f7;
-}
-img {
-  height: auto;
-  max-width: 100%;
+/* ── Buttons ── */
+.btn-primary {
+  background-color: #caaa98;
+  border-color: #9a8678;
 }
 
-.logo {
+.btn-ask {
+  background-color: #caaa98;
+  color: #3d2b1f;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.btn-ask:hover {
+  background-color: #e8d5c8;
+  color: #3d2b1f;
+}
+
+/* ── Footer ── */
+.footer-legal a {
+  font-size: 1.3rem;
+}
+
+/* ── Login ── */
+.login-container {
+  min-height: 100vh;
+}
+
+.login-card {
   width: 100%;
-  max-width: 200px;
-  height: auto;
+  max-width: 400px;
 }
+
+/* ============================================================
+   STARTSEITE (index.html)
+   ============================================================ */
 
 .start-img {
   height: auto;
@@ -50,11 +120,6 @@ img {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.btn-primary {
-  background-color: #caaa98;
-  border-color: #9a8678;
-}
-
 .qualifikation {
   background-color: #f5f5f5;
 }
@@ -65,26 +130,12 @@ img {
   object-fit: cover;
 }
 
-.nav-link {
-  color: #eaefef;
-  font-size: 2rem;
-}
-
 .card-img-top {
   height: 225px;
   object-fit: cover;
 }
 
-.login-container {
-  min-height: 100vh;
-}
-
-.login-card {
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Carousel */
+/* ── Haupt-Carousel ── */
 #mainCarousel {
   width: 70%;
   margin: 20px auto;
@@ -108,6 +159,7 @@ img {
   padding: clamp(8px, 2%, 24px);
   z-index: 10;
 }
+
 .carousel-text-box h5 {
   font-size: clamp(0.7rem, 1.5vw, 1.1rem);
   margin-bottom: 10px;
@@ -142,7 +194,14 @@ img {
   filter: invert(0);
 }
 
-/* Handy */
+/* ── Testimonial-Carousel ── */
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+  width: 30px;
+  filter: invert(0);
+}
+
+/* ── Responsive Startseite (max 768px) ── */
 @media (max-width: 768px) {
   #mainCarousel {
     width: 100%;
@@ -174,14 +233,537 @@ img {
   }
 }
 
-/* Testimonial Carousel */
+/* ============================================================
+   ÜBER UNS (uber-uns.html)
+   ============================================================ */
 
-#testimonialCarousel .carousel-control-prev,
-#testimonialCarousel .carousel-control-next {
-  width: 30px;
-  filter: invert(0);
+/* ── Hero ── */
+.hero {
+  background-color: var(--ask-dark);
+  color: white;
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
 }
 
-.footer-legal a {
-  font-size: 1.3rem;
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.hero-label {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--ask-accent);
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #aab0c0;
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+/* ── Abschnitts-Elemente ── */
+.section-label {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ask-accent);
+  margin-bottom: 12px;
+}
+
+.accent-line {
+  width: 50px;
+  height: 3px;
+  background-color: var(--ask-accent);
+  margin-bottom: 24px;
+}
+
+/* ── Wir-Sektion ── */
+.section-wir {
+  padding: 80px 0;
+}
+
+.section-wir h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-wir p {
+  color: #555;
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+.versprechen-box {
+  background: var(--ask-light);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.versprechen-box li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0ddd8;
+  font-size: 0.95rem;
+  color: #333;
+  list-style: none;
+}
+
+.versprechen-box li:last-child {
+  border-bottom: none;
+}
+
+/* ── Zahlen-Sektion ── */
+.section-zahlen {
+  background-color: var(--ask-dark);
+  color: white;
+  padding: 70px 0;
+}
+
+.zahl-box {
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.zahl-box:last-child {
+  border-right: none;
+}
+
+.zahl-box .zahl {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--ask-accent);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.zahl-box p {
+  font-size: 0.9rem;
+  color: var(--ask-text-light);
+  margin: 0;
+}
+
+/* ── Stärken-Sektion ── */
+.section-staerken {
+  background-color: var(--ask-light);
+  padding: 80px 0;
+}
+
+.staerken-card {
+  cursor: default;
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 24px;
+  height: 100%;
+  border-top: 3px solid var(--ask-accent);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.staerken-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.staerken-card .icon {
+  user-select: none;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.staerken-card h5 {
+  user-select: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.staerken-card p {
+  user-select: none;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Schritte-Sektion ── */
+.section-schritte {
+  padding: 80px 0;
+}
+
+.schritt {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.schritt-nr {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--ask-dark);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.schritt h6 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.schritt p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.abschluss-box {
+  background: var(--ask-light);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.abschluss-box li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e0ddd8;
+  font-size: 0.9rem;
+  color: #444;
+  list-style: none;
+}
+
+.abschluss-box li:last-child {
+  border-bottom: none;
+}
+
+/* ── Förderung-Sektion ── */
+.section-foerderung {
+  background-color: var(--ask-light);
+  padding: 80px 0;
+}
+
+.foerder-badge {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--ask-dark);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 6px 4px;
+}
+
+/* ── Standort-Sektion ── */
+.section-standort {
+  padding: 60px 0;
+  background-color: #f0f0f0;
+}
+
+.standort-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 48px;
+  height: 100%;
+  border-top: 3px solid var(--ask-accent);
+}
+
+.standort-card h5 {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.standort-card p,
+.standort-card li {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* ── CTA-Sektion ── */
+.section-cta {
+  background-color: var(--ask-dark);
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-cta h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.section-cta p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 28px;
+  color: white;
+}
+
+/* ── Responsive Über uns (max 768px) ── */
+@media (max-width: 768px) {
+  .hero::before {
+    display: none;
+  }
+
+  .zahl-box {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px 0;
+  }
+
+  .zahl-box:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ============================================================
+   KONTAKT (kontakt.html)
+   ============================================================ */
+
+/* ── Hero ── */
+.kontakt-hero {
+  background-color: var(--ask-dark);
+  color: white;
+  padding: 60px 0;
+}
+
+.kontakt-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.kontakt-hero p {
+  color: #e8d5c8;
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+/* ── Kontakt-Sektion ── */
+.section-kontakt {
+  padding: 80px 0;
+  background-color: var(--ask-light);
+}
+
+.kontakt-info-box {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-left: 4px solid var(--ask-accent);
+  transition: box-shadow 0.2s;
+}
+
+.kontakt-info-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.kontakt-info-box h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.kontakt-info-box p,
+.kontakt-info-box a {
+  font-size: 0.95rem;
+  color: #555;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.kontakt-info-box a:hover {
+  color: var(--ask-accent);
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
+  color: white;
+}
+
+/* ── Kontaktformular ── */
+.kontakt-formular {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.kontakt-formular h4 {
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--ask-dark);
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--ask-accent);
+  box-shadow: 0 0 0 3px rgba(200, 150, 60, 0.15);
+}
+
+.btn-kontakt {
+  background-color: var(--ask-accent);
+  color: white;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.btn-kontakt:hover {
+  background-color: #a87a2e;
+}
+
+/* ============================================================
+   IMPRESSUM & DATENSCHUTZ
+   ============================================================ */
+
+/* ── Hero ── */
+.hero-datenschutz {
+  background-color: #f8f9fa;
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.hero-datenschutz h1 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #1a2340;
+}
+
+.hero-datenschutz p {
+  color: #555;
+  max-width: 620px;
+  line-height: 1.8;
+}
+
+/* ── Inhalt ── */
+.datenschutz-content {
+  padding: 3rem 0 4rem;
+  background-color: #f8f9fa;
+}
+
+.datenschutz-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 2.5rem;
+}
+
+.section-block {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.section-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.section-block h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a2340;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-block p,
+.section-block li {
+  color: #444;
+  line-height: 1.8;
+  font-size: 0.97rem;
+}
+
+.section-block ul {
+  padding-left: 1.4rem;
+}
+
+.section-block ul li {
+  margin-bottom: 0.3rem;
+}
+
+.section-block a {
+  color: #c0392b;
+}
+
+.info-box {
+  background-color: #f1f4fb;
+  border-left: 4px solid #c0392b;
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.info-box a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
 }
