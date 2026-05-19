@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sicherheitskraft Schulung | Startseite</title>
+    <title>Sicherheitskraft Schulung | Kurse</title>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -103,11 +107,491 @@
     </section>
 
     <!-- ============================================================
+         MAIN – Kursübersicht
+         ============================================================ -->
+    <main class="flex-grow-1">
+      <!-- Hero -->
+      <section class="kontakt-hero">
+        <div class="container">
+          <div class="accent-line"></div>
+          <h1>Unsere Kurse</h1>
+          <p>
+            Zertifizierte Weiterbildungen für die Sicherheitsbranche –
+            förderfähig nach AZAV.
+          </p>
+        </div>
+      </section>
+
+      <!-- Accordion-Tabelle -->
+      <section class="kurse-section-wrap">
+        <div class="container">
+          <!-- ── Kategorie 1: Sicherheit ── -->
+          <div class="kurse-category">
+            <div class="kurse-category-title">Aktuelle Kurse – Sicherheit</div>
+            <table class="kurse-table">
+              <thead>
+                <tr>
+                  <th>Kurs</th>
+                  <th>Ort</th>
+                  <th>Start</th>
+                  <th style="text-align: right">Infos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Zeile 1 -->
+                <tr class="kurse-row" onclick="toggleDetail('sik-1')">
+                  <td class="kurs-name">
+                    §34a Sachkunde-Grundlehrgang | Vollzeit
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">02.06.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-sik-1"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-sik-1">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">6 Wochen</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Vollzeit</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">12 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Vorbereitung auf die IHK-Sachkundeprüfung nach §34a
+                        GewO. Themen: Rechtsgrundlagen, Datenschutz,
+                        Deeskalation und Erste Hilfe.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">IHK-Prüfung</span>
+                        <span class="detail-badge">Erste Hilfe inkl.</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Zeile 2 -->
+                <tr class="kurse-row" onclick="toggleDetail('sik-2')">
+                  <td class="kurs-name">
+                    §34a Sachkunde-Grundlehrgang | Teilzeit
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">01.07.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-sik-2"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-sik-2">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">10 Wochen</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Teilzeit (Mo–Mi)</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">8 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Gleicher Inhalt wie Vollzeit – ideal für Teilnehmer mit
+                        anderen Verpflichtungen. Unterricht montags bis
+                        mittwochs.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">IHK-Prüfung</span>
+                        <span class="detail-badge">Flexibel</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Zeile 3 -->
+                <tr class="kurse-row" onclick="toggleDetail('sik-3')">
+                  <td class="kurs-name">
+                    Handlungskompetenzen im Sicherheitsdienst
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">01.09.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-sik-3"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-sik-3">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">4 Wochen</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Vollzeit</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">15 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Praxisnahe Weiterbildung für aktive Sicherheitskräfte.
+                        Kommunikation, Einsatztaktik und Selbstschutz im Fokus.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">Aufbaukurs</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Zeile 4 -->
+                <tr class="kurse-row" onclick="toggleDetail('sik-4')">
+                  <td class="kurs-name">
+                    Eignungsfeststellung im Sicherheitsbereich
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">01.10.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-sik-4"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-sik-4">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">2 Wochen</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Vollzeit</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">20 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Feststellung persönlicher, sozialer und fachlicher
+                        Eignung für die Sicherheitsbranche. Ideal als
+                        Einstiegsmodul.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">Einstiegsmodul</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- ── Kategorie 2: ÖPNV ── -->
+          <div class="kurse-category">
+            <div class="kurse-category-title">Aktuelle Kurse – ÖPNV</div>
+            <table class="kurse-table">
+              <thead>
+                <tr>
+                  <th>Kurs</th>
+                  <th>Ort</th>
+                  <th>Start</th>
+                  <th style="text-align: right">Infos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Zeile 1 -->
+                <tr class="kurse-row" onclick="toggleDetail('oepnv-1')">
+                  <td class="kurs-name">
+                    Service- &amp; Sicherheitskraft ÖPNV | Vollzeit
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">01.06.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-oepnv-1"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-oepnv-1">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">8 Wochen</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Vollzeit</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">10 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Ausbildung für den öffentlichen Nahverkehr inkl.
+                        VRR-Tarifkunde, Deeskalation und professionelle
+                        Fahrgastbetreuung.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">VRR-Tarifkunde</span>
+                        <span class="detail-badge">Praxisübungen</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Zeile 2 -->
+                <tr class="kurse-row" onclick="toggleDetail('oepnv-2')">
+                  <td class="kurs-name">
+                    Service- &amp; Sicherheitskraft ÖPNV | Vollzeit
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">01.09.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-oepnv-2"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-oepnv-2">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">8 Wochen</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Vollzeit</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">12 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Ausbildung für den öffentlichen Nahverkehr inkl.
+                        VRR-Tarifkunde, Deeskalation und professionelle
+                        Fahrgastbetreuung.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">VRR-Tarifkunde</span>
+                        <span class="detail-badge">Praxisübungen</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- ── Kategorie 3: Weitere Qualifikationen ── -->
+          <div class="kurse-category">
+            <div class="kurse-category-title">Weitere Qualifikationen</div>
+            <table class="kurse-table">
+              <thead>
+                <tr>
+                  <th>Kurs</th>
+                  <th>Ort</th>
+                  <th>Start</th>
+                  <th style="text-align: right">Infos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Zeile 1 -->
+                <tr class="kurse-row" onclick="toggleDetail('weit-1')">
+                  <td class="kurs-name">
+                    Erste Hilfe &amp; Brandschutz Kombikurs
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">15.06.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-weit-1"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-weit-1">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">3 Tage</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Kompaktkurs</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">16 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Ersthelfer gem. DGUV-V1, Brandschutzhelfer gem. §10
+                        ArbSchG und Räumungshelfer – alles in einem Abschluss.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">DGUV-V1</span>
+                        <span class="detail-badge">§10 ArbSchG</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Zeile 2 -->
+                <tr class="kurse-row" onclick="toggleDetail('weit-2')">
+                  <td class="kurs-name">
+                    Erste Hilfe &amp; Brandschutz Kombikurs
+                  </td>
+                  <td class="kurs-ort">Duisburg</td>
+                  <td class="kurs-start">01.10.2026</td>
+                  <td class="kurs-toggle">
+                    <button
+                      class="kurse-toggle-btn"
+                      id="btn-weit-2"
+                      aria-expanded="false"
+                      aria-label="Details anzeigen"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="4">
+                    <div class="detail-inner" id="detail-weit-2">
+                      <div class="detail-grid">
+                        <div class="detail-item">
+                          <div class="detail-label">Dauer</div>
+                          <div class="detail-val">3 Tage</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Format</div>
+                          <div class="detail-val">Kompaktkurs</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">Verfügbarkeit</div>
+                          <div class="detail-val">20 Plätze frei</div>
+                        </div>
+                      </div>
+                      <p class="detail-desc">
+                        Ersthelfer gem. DGUV-V1, Brandschutzhelfer gem. §10
+                        ArbSchG und Räumungshelfer – alles in einem Abschluss.
+                      </p>
+                      <div class="detail-tags">
+                        <span class="detail-badge">AZAV förderfähig</span>
+                        <span class="detail-badge">DGUV-V1</span>
+                        <span class="detail-badge">§10 ArbSchG</span>
+                      </div>
+                      <a href="./kontakt.html" class="detail-anmelden"
+                        >Jetzt anmelden</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
          FOOTER
          ============================================================ -->
     <footer class="gradient-background px-4 py-5">
       <div class="container">
-        <!-- Footer-Navigation -->
         <ul class="nav justify-content-center pb-3 mb-3">
           <li class="nav-item">
             <a href="index.html" class="nav-link px-2">Startseite</a>
@@ -122,14 +606,10 @@
             <a href="kontakt.html" class="nav-link px-2">Kontakt</a>
           </li>
         </ul>
-
-        <!-- Adresse & Kontakt -->
         <p class="text-center text-white">
           © 2026 A.S.K Akademie für Sicherheit & Kommunikation GmbH <br />|
-          Dammstraße 25, 47119 Duisburg | +49 (0) 203 73 95 77 71 <br />
+          Dammstraße 25, 47119 Duisburg | +49 (0) 203 73 95 77 71
         </p>
-
-        <!-- Rechtliches -->
         <ul class="nav justify-content-center mt-2 footer-legal">
           <li class="nav-item">
             <a href="./datenschutz.html" class="nav-link px-2">Datenschutz</a>
@@ -147,5 +627,17 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Accordion JavaScript -->
+    <script>
+      function toggleDetail(id) {
+        var detail = document.getElementById("detail-" + id);
+        var btn = document.getElementById("btn-" + id);
+        var isOpen = detail.classList.contains("open");
+        detail.classList.toggle("open", !isOpen);
+        btn.classList.toggle("open", !isOpen);
+        btn.setAttribute("aria-expanded", String(!isOpen));
+      }
+    </script>
   </body>
 </html>

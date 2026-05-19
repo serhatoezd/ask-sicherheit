@@ -13,6 +13,25 @@
   --ask-text-light: #e8d5c8; /* Helles Beige – Text auf dunklem Hintergrund */
 }
 
+:root {
+  --ask-dark: #1e3a5f; /* Dunkelblau – Hauptfarbe */
+  --ask-dark-mid: #0f2035; /* Sehr dunkel – Zwischenbereiche */
+  --ask-accent: #4a9ede; /* Hellblau – Buttons, Akzente, Linien */
+  --ask-light: #f4f8fc; /* Sehr helles Blau-Weiß – Hintergründe */
+  --ask-mid: #7aabcf; /* Mittleres Blau – Zwischenbereiche */
+  --ask-text-light: #c8dff0; /* Helles Blau-Beige – Text auf dunklem Hintergrund */
+}
+
+/* ── Gradient-Hintergrund (z.B. Footer/Banner) ── */
+.gradient-background {
+  background: linear-gradient(300deg, #caaa98, #9a8678);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.gradient-background {
+  background: #0f2035;
+}
 /* ============================================================
    GLOBAL – Basis-Styles für alle Seiten
    ============================================================ */
@@ -40,13 +59,6 @@ img {
   width: 100%;
   max-width: 200px;
   height: auto;
-}
-
-/* ── Gradient-Hintergrund (z.B. Footer/Banner) ── */
-.gradient-background {
-  background: linear-gradient(300deg, #caaa98, #9a8678);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -817,4 +829,201 @@ img {
     padding: 14px;
     border-radius: 50%;
   }
+}
+
+/* ============================================================
+   KURSE – Accordion-Tabelle
+   ============================================================ */
+
+.kurse-section-wrap {
+  padding: 3rem 0;
+  background-color: var(--ask-light);
+}
+
+.kurse-category {
+  margin-bottom: 3rem;
+}
+
+.kurse-category-title {
+  color: var(--ask-accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--ask-accent);
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+.kurse-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.kurse-table thead tr {
+  border-bottom: 1px solid var(--ask-mid);
+  background-color: var(--ask-dark-mid);
+}
+
+.kurse-table thead th {
+  font-size: 12px;
+  color: var(--ask-text-light);
+  font-weight: 400;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.kurse-table thead th:last-child {
+  text-align: right;
+}
+
+.kurse-row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.kurse-row:hover {
+  background-color: #f5ede6;
+}
+
+.kurse-row td {
+  padding: 16px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--ask-text-light);
+  vertical-align: middle;
+  color: var(--ask-dark-mid);
+}
+
+.kurse-row td.kurs-name {
+  font-weight: 600;
+  color: var(--ask-dark);
+}
+
+.kurse-row td.kurs-ort,
+.kurse-row td.kurs-start {
+  color: var(--ask-dark);
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.kurse-row td.kurs-toggle {
+  text-align: right;
+}
+
+.kurse-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ask-accent);
+  font-size: 20px;
+  transition: transform 0.25s ease;
+}
+
+.kurse-toggle-btn.open {
+  transform: rotate(180deg);
+}
+
+.detail-row td {
+  padding: 0 !important;
+  border-bottom: 1px solid var(--ask-mid);
+}
+
+.detail-inner {
+  overflow: hidden;
+  max-height: 0;
+  transition:
+    max-height 0.35s ease,
+    padding 0.25s ease;
+  background-color: var(--ask-dark-mid);
+  padding: 0 16px;
+}
+
+.detail-inner.open {
+  max-height: 500px;
+  padding: 20px 16px;
+}
+
+.detail-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 14px;
+}
+
+.detail-item .detail-label {
+  font-size: 11px;
+  color: var(--ask-mid);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-item .detail-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ask-text-light);
+}
+
+.detail-desc {
+  font-size: 14px;
+  color: var(--ask-text-light);
+  line-height: 1.65;
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+
+.detail-tags {
+  margin-bottom: 16px;
+}
+
+.detail-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  background-color: rgba(200, 150, 60, 0.18);
+  color: var(--ask-accent);
+  border: 1px solid rgba(200, 150, 60, 0.35);
+  margin-right: 6px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.detail-anmelden {
+  font-size: 14px;
+  padding: 8px 22px;
+  border-radius: 6px;
+  background-color: var(--ask-accent);
+  color: var(--ask-dark-mid);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.detail-anmelden:hover {
+  background-color: #b5822e;
+  color: var(--ask-dark-mid);
+}
+
+@media (max-width: 576px) {
+  .kurse-table thead th:nth-child(2),
+  .kurse-row td:nth-child(2) {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
