@@ -856,6 +856,7 @@ img {
 }
 
 .kurse-table {
+  user-select: none;
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
@@ -879,7 +880,8 @@ img {
 }
 
 .kurse-row {
-  cursor: pointer;
+  user-select: none;
+  caret-color: transparent;
   transition: background 0.15s ease;
 }
 
@@ -893,6 +895,7 @@ img {
   border-bottom: 1px solid var(--ask-text-light);
   vertical-align: middle;
   color: var(--ask-dark-mid);
+  cursor: pointer;
 }
 
 .kurse-row td.kurs-name {
@@ -922,6 +925,9 @@ img {
   color: var(--ask-accent);
   font-size: 20px;
   transition: transform 0.25s ease;
+  caret-color: transparent;
+  user-select: none;
+  outline: none;
 }
 
 .kurse-toggle-btn.open {
