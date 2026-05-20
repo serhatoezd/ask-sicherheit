@@ -570,7 +570,7 @@ img {
 }
 
 .kontakt-hero p {
-  color: #e8d5c8;
+  color: white;
   font-size: 1rem;
   max-width: 500px;
 }
@@ -992,7 +992,7 @@ img {
   font-size: 11px;
   padding: 3px 10px;
   border-radius: 100px;
-  background-color: rgba(200, 150, 60, 0.18);
+  background-color: rgba(97, 60, 200, 0.18);
   color: var(--ask-accent);
   border: 1px solid rgba(200, 150, 60, 0.35);
   margin-right: 6px;
