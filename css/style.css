@@ -4,14 +4,6 @@
    ============================================================ */
 
 /* ── CSS-Variablen ── */
-:root {
-  --ask-dark: #6b4c35;
-  --ask-dark-mid: #3d2b1f; /* Etwas heller – Zwischenbereiche */
-  --ask-accent: #c8963c; /* Gold – Buttons, Akzente, Linien */
-  --ask-light: #fdf9f7; /* Cremeweiß – Hintergründe */
-  --ask-mid: #caaa98; /* Helles Braun – Hero rechte Seite */
-  --ask-text-light: #e8d5c8; /* Helles Beige – Text auf dunklem Hintergrund */
-}
 
 :root {
   --ask-dark: #1e3a5f; /* Dunkelblau – Hauptfarbe */
@@ -23,11 +15,6 @@
 }
 
 /* ── Gradient-Hintergrund (z.B. Footer/Banner) ── */
-.gradient-background {
-  background: linear-gradient(300deg, #caaa98, #9a8678);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-}
 
 .gradient-background {
   background: #0f2035;
