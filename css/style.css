@@ -68,14 +68,15 @@ img {
 
 /* ── Buttons ── */
 .btn-primary {
-  background-color: #caaa98;
-  border-color: #9a8678;
+  background-color: var(--ask-dark);
+  border-color: #2b7ab8;
+  color: #fff;
 }
 
 .btn-ask {
-  background-color: #caaa98;
-  color: #3d2b1f;
-  font-weight: 700;
+  background-color: var(--ask-accent);
+  color: #ffffff;
+  font-weight: 500;
   padding: 12px 32px;
   border-radius: 4px;
   text-decoration: none;
@@ -85,8 +86,8 @@ img {
 }
 
 .btn-ask:hover {
-  background-color: #e8d5c8;
-  color: #3d2b1f;
+  background-color: var(--ask-dark-mid);
+  color: #ffffff;
 }
 
 /* ── Footer ── */
@@ -668,7 +669,7 @@ img {
 }
 
 .btn-kontakt:hover {
-  background-color: #a87a2e;
+  background-color: var(--ask-dark-mid);
 }
 
 /* ============================================================
@@ -792,7 +793,7 @@ img {
 }
 
 .whatsapp-float:hover {
-  background-color: #b89080;
+  background-color: var(--ask-dark);
   color: var(--ask-text-light);
   transform: translateY(-2px);
 }
@@ -873,7 +874,7 @@ img {
 }
 
 .kurse-row:hover {
-  background-color: #f5ede6;
+  background-color: var(--ask-light);
 }
 
 .kurse-row td {
@@ -1002,8 +1003,8 @@ img {
 }
 
 .detail-anmelden:hover {
-  background-color: #b5822e;
-  color: var(--ask-dark-mid);
+  background-color: var(--ask-dark);
+  color: #ffffff;
 }
 
 @media (max-width: 576px) {
